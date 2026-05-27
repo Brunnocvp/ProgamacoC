@@ -5,7 +5,7 @@
         char estado1;
         char codigo1[4];
         char nomeCidade1[50];
-        int populaçao1;
+        int populacao1;
         float area1;
         float pib1;
         int pontosTuristicos1;
@@ -14,7 +14,7 @@
         char estado2;
         char codigo2[4];
         char nomeCidade2[50];
-        int populaçao2;
+        int populacao2;
         float area2;
         float pib2;
         int pontosTuristicos2;
@@ -32,7 +32,7 @@
         scanf(" %[^\n]", nomeCidade1); // Permite ler nomes compostos com espaços
 
         printf("Dgite a Populaçao: ");
-        scanf("%d", &populaçao1);
+        scanf("%d", &populacao1);
 
         printf("Digite a Area (em km): ");
         scanf("%f", &area1);
@@ -57,7 +57,7 @@
         scanf(" %[^\n]", nomeCidade2); // Permite ler nomes compostos com espaços
 
         printf("Dgite a Populaçao: ");
-        scanf("%d", &populaçao2);
+        scanf("%d", &populacao2);
 
         printf("Digite a Area (em km): ");
         scanf("%f", &area2);
@@ -75,21 +75,22 @@
         printf("Estado: %c\n", estado1);
         printf("Codigo: %s\n", codigo1);
         printf("Nome da Cidade: %s\n", nomeCidade1);
-        printf("Populaçao: %d\n" populaçao1);
+        printf("populacao: %d\n", populacao1);
         printf("Area: %.2f km\n", area1);
         printf("pib: %.2f bilhoes de reais\n", pib1);
-        printf(""numero de pontos turisticos: %d\n\n", pontosTuristicos1);
+        printf("numero de pontos turisticos: %d\n\n", pontosTuristicos1);
 
         // Exibiçao da carta 2
         printf("Carta 2:\n");
         printf("Estado: %c\n", estado2);
         printf("Codigo: %s\n", codigo2);
         printf("Nome da Cidade: %s\n", nomeCidade2);
-        printf("Populaçao: %d\n" populaçao2);
+        printf("populacao: %d\n", populacao2);
         printf("Area: %.2f km\n", area2);
         printf("pib: %.2f bilhoes de reais\n", pib2);
-        printf(""numero de pontos turisticos: %d\n\n", pontosTuristicos2);
+        printf("numero de pontos turisticos: %d\n\n", pontosTuristicos2);
 
         return 0;
 
+    }
     }
