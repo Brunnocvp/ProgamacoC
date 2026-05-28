@@ -10,6 +10,9 @@
         float pib1;
         int pontosTuristicos1;
 
+        float densidade1;
+        float pibPerCapit1;
+
         // --- VARIAVEIS PARA CARTA 2 ---
         char estado2;
         char codigo2[4];
@@ -18,6 +21,9 @@
         float area2;
         float pib2;
         int pontosTuristicos2;
+
+        float densidade2;
+        float pibPerCapit2;
 
         // ====================== CADATRO DA CARTA 1 ==================
         printf("--- Cadastro da Carta 1 ---\n");
@@ -69,6 +75,17 @@
         scanf("%d", &pontosTuristicos2);
         printf("\n");
 
+        
+        //======================= Calculos ///////////////////////////
+        // densidade popuacional = populacao / area
+        densidade1 = (float)populacao1 / area1;
+        densidade2 = (float)populacao2 / area2;
+
+        // pib per capita = ( pib em bilhoes * 1000000000 / populacao)
+        // convertendo o pib de bilhoes para a unidade real antes da divisao
+        pibPerCapit1 = (pib1 * 1000000000.0) / populacao1;
+        pibPerCapit2 = (pib2 * 1000000000.0) / populacao2;
+
         // ============== EXIBIÇAO DOS DADOS ==============
         // Exibiçao da carta 1
         printf("Carta 1:\n");
@@ -92,5 +109,4 @@
 
         return 0;
 
-    }
     }
